@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,900;1,300&display=swap');
+
+:root {
+  --primary-blue: #1992D4;
+  --primary-yellow: #F0B429;
+  --main-background: #E2E8F0;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: Roboto, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  background-color: lightpink;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: auto 1fr auto auto;
+  min-height: 100vh;
+}
+
+svg {
+  width: 50px;
+  height: 50px;
+  fill: white;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* Header */
+header {
+  background-color: #FFF;
+  grid-row: 1 / 2;
+  grid-column: 2 / -1;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas: auto auto;
+  align-items: center;
+}
+
+.searchbar {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+}
+
+/* Profile Info Section */
+.profile-info {
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+  display: flex;
+  align-items: center;
+}
+
+.profile-info svg {
+  width: 25px;
+  height: 25px;
+  fill: #000;
+}
+
+/* Welcome Section */
+.welcome-user {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  display: grid;
+  grid-template-columns: 50px auto;
+  column-gap: 16px;
+}
+
+.welcome-user img {
+  grid-row: 1 / 3;
+}
+
+.welcome-user .user-name {
+  grid-column: 2 / 3;
+}
+/* Sidebar */
+.sidebar {
+  background-color: lightcyan;
+  grid-row: 1 / -1;
+  grid-column: 1 / 2;
+  background-color: var(--primary-blue);
+}
+
+/* Projects */
+.projects {
+  background-color: lightgreen;
+  grid-row: 2 / -2;
+  grid-column: 2 / -2;
+}
+
+.announcements {
+  background-color: lightslategrey;
+  grid-column: -2 / -1;
+}
+
+.trending {
+  background-color: lightskyblue;
+  grid-column: -2 / -1;
+}
+
+footer {
+  background-color: lightyellow;
+  grid-row: -2 / -1;
+  grid-column: 2 / -1;
+}
+
+/* Footer */
+footer {
+  background-color: var(--main-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  /* padding: 0 8px; */
+}
+
+.fa-github {
+  font-size: 24px;
+  transition: transform 0.3s ease-in-out;
+  color: black;
+}
+
+.fa-github:hover {
+  transform: rotate(360deg) scale(1.2);
+}
