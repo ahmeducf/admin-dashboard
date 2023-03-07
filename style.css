@@ -181,9 +181,6 @@ header {
 
 .sidebar nav ul li {
   list-style-type: none;
-  display: flex;
-  column-gap: 16px;
-  align-items: center;
 }
 
 .sidebar nav ul li svg {
@@ -194,6 +191,10 @@ header {
   text-decoration: none;
   color: #FFF;
   font-weight: 600;
+  list-style-type: none;
+  display: flex;
+  column-gap: 16px;
+  align-items: center;
 }
 
 /* Projects */
