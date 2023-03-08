@@ -117,6 +117,7 @@ header {
   align-items: center;
   justify-content: flex-end;
   column-gap: 30px;
+  padding-right: 16px;
 }
 
 .profile-info svg {
@@ -166,6 +167,7 @@ header {
 header .buttons {
   display: flex;
   justify-content: space-between;
+  column-gap: 16px;
 }
 
 header .buttons button {
