@@ -91,6 +91,13 @@ svg, img, button {
   border-radius: 50%;
 }
 
+header,
+.projects-items .item,
+.announcements-items,
+.trending-items {
+  box-shadow: 2px 2px 8px -5px black;
+}
+
 /* Header */
 header {
   background-color: #FFF;
