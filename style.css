@@ -27,7 +27,7 @@ html {
 }
 
 /***** General *****/
-svg, img {
+svg, img, button {
   cursor: pointer;
 }
 
@@ -97,8 +97,9 @@ header {
   grid-row: 1 / 2;
   grid-column: 2 / -1;
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: minmax(400px, 2.5fr) 1fr;
   align-items: center;
+  row-gap: 10px;
   padding: 16px 40px;
 }
 
@@ -114,6 +115,7 @@ header {
   grid-column: 2 / 3;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   column-gap: 30px;
 }
 
@@ -161,7 +163,19 @@ header {
 }
 
 /* Buttons Section */
+header .buttons {
+  display: flex;
+  justify-content: space-between;
+}
 
+header .buttons button {
+  background-color: var(--primary-blue);
+  padding: 10px 24px;
+  color: #FFF;
+  border-width: 0;
+  border-radius: 24px;
+  font-weight: 700;
+}
 
 /* Sidebar */
 .sidebar {
@@ -309,7 +323,7 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  /* padding: 0 8px; */
+  padding: 8px 0;
 }
 
 .fa-github {
