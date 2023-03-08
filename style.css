@@ -5,6 +5,8 @@
   --primary-yellow: #F0B429;
   --main-background: #E2E8F0;
   --secondary-content: #858585;
+  --font-size-medium-500: 500;
+  --font-size-bold-700: 700;
 }
 
 html {
@@ -24,6 +26,7 @@ html {
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: auto 1fr 1fr auto auto;
   min-height: 100vh;
+  font-size: 1rem;
 }
 
 /***** General *****/
@@ -36,6 +39,29 @@ svg, img, button {
 .projects-items .buttons svg {
   width: 25px;
   height: 25px;
+}
+
+.announcements h2,
+.trending h2,
+.projects h2,
+.welcome-user-message {
+  font-weight: var(--font-size-medium-500);
+}
+
+.announcements-items .item .title,
+.projects-items .item .title,
+.profile-info .user-name,
+.welcome-user .user-name,
+header .buttons button,
+.sidebar nav ul li a,
+.logo .logo-text {
+  font-weight: var(--font-size-bold-700);
+}
+
+.welcome-user .user-name,
+.announcements-items .item .title,
+.projects-items .item .title {
+  font-size: 1.1rem;
 }
 
 .announcements, .trending, .projects {
@@ -68,15 +94,12 @@ svg, img, button {
 .trending h2,
 .projects h2 {
   align-self: start;
-  font-weight: 500;
   margin-bottom: 16px;
   font-size: 1.5rem;
 }
 
 .announcements-items .item .title,
 .projects-items .item .title {
-  font-weight: 700;
-  font-size: 1.1rem;
   padding-bottom: 8px;
 }
 .announcements-items .item .content,
@@ -160,10 +183,6 @@ header {
   border-radius: 50%;
 }
 
-.profile-info .user-name {
-  font-weight: 700;
-}
-
 /* Welcome Section */
 .welcome-user {
   grid-row: 2 / 3;
@@ -184,13 +203,10 @@ header {
 .welcome-user-message {
   align-self: center;
   font-size: .8rem;
-  font-weight: 500;
 }
 
 .welcome-user .user-name {
   grid-column: 2 / 3;
-  font-size: 1.1rem;
-  font-weight: 700;
 }
 
 /* Buttons Section */
@@ -206,7 +222,6 @@ header .buttons button {
   color: #FFF;
   border-width: 0;
   border-radius: 24px;
-  font-weight: 700;
 }
 
 /* Sidebar */
@@ -235,7 +250,6 @@ header .buttons button {
 
 .logo .logo-text {
   color: #FFF;
-  font-weight: 700;
   font-size: 1.2rem;
 }
 
@@ -260,7 +274,6 @@ header .buttons button {
 .sidebar nav ul li a {
   text-decoration: none;
   color: #FFF;
-  font-weight: 700;
   list-style-type: none;
   display: flex;
   column-gap: 16px;
